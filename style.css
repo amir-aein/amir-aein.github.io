@@ -1,0 +1,59 @@
+:root {
+    --White: #F5F7F7;
+    --Black: #3E3E3E;
+    --Grey: #999999;
+}
+body {
+    background: var(--White);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--Black);
+    font-size: 13px;
+    margin: 0;
+}
+h1, h2 {
+    font-size: 1em;
+    margin: 0;
+}
+h2 {
+    font-weight: normal;
+    color: var(--Grey);
+}
+.mainHeader {
+    display: flex;
+    width: 90%;
+    margin: 40px auto;
+    max-width: 550px;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainLogo {
+    display: flex;
+}
+.mainLogo img {
+    margin-right: 1em;
+    width: 75px;
+    height: auto;
+}
+.mainLogo > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mainNav{
+    display: flex;
+}
+.mainNav a {
+    color: var(--Grey);
+    padding: .3em 1em;
+    border: 1px solid var(--White);
+    border-radius: 1em;
+    text-decoration: none;
+    margin-left: .5em;
+}
+.mainNav a:hover {
+    color: var(--Black);
+}
+.mainNav a.active {
+    color: var(--Black);
+    border-color: var(--Black);
+}
