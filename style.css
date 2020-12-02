@@ -30,6 +30,7 @@ h2 {
     max-width: 550px;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .mainLogo {
@@ -82,11 +83,12 @@ h2 {
 }
 
 .category {
-    margin: 2em;
+    margin: 2em 0;
 }
 
 .category h1 {
     text-align: center;
+    margin-bottom: 2em;
 }
 
 .worksWrapper {}
@@ -122,14 +124,26 @@ h2 {
 
 .worksWrapper ul li {
     list-style-type: none;
-    margin-right: 10px;
+    margin-left: 10px;
     border-radius: 1em;
     overflow: hidden;
     flex: 0 0 auto;
     margin-bottom: 5px;
 }
+.worksWrapper ul li:last-child {
+    margin-right: 10px;
+}
 
-.worksWrapper ul li img {
-    width: 185px;
-    height: auto;
+
+@media (max-width: 576px) {
+    .mainHeader {
+        justify-content: center;
+    }
+    .mainLogo {
+        margin-bottom: 2em;
+    }
+    .mainNav {
+        width: 100%;
+        justify-content: center;
+    }
 }
