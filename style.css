@@ -3,6 +3,7 @@
     --Black: #3E3E3E;
     --Grey: #999999;
 }
+
 body {
     background: var(--White);
     font-family: Arial, Helvetica, sans-serif;
@@ -10,14 +11,18 @@ body {
     font-size: 13px;
     margin: 0;
 }
-h1, h2 {
+
+h1,
+h2 {
     font-size: 1em;
     margin: 0;
 }
+
 h2 {
     font-weight: normal;
     color: var(--Grey);
 }
+
 .mainHeader {
     display: flex;
     width: 90%;
@@ -26,22 +31,27 @@ h2 {
     justify-content: space-between;
     align-items: center;
 }
+
 .mainLogo {
     display: flex;
 }
+
 .mainLogo img {
     margin-right: 1em;
     width: 75px;
     height: auto;
 }
-.mainLogo > div {
+
+.mainLogo>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.mainNav{
+
+.mainNav {
     display: flex;
 }
+
 .mainNav a {
     color: var(--Grey);
     padding: .3em 1em;
@@ -50,10 +60,76 @@ h2 {
     text-decoration: none;
     margin-left: .5em;
 }
+
 .mainNav a:hover {
     color: var(--Black);
 }
+
 .mainNav a.active {
     color: var(--Black);
     border-color: var(--Black);
+}
+
+.contentWrapper {
+    margin-bottom: 10em;
+}
+
+.contentWrapper p {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto 3em auto;
+    text-align: center;
+}
+
+.category {
+    margin: 2em;
+}
+
+.category h1 {
+    text-align: center;
+}
+
+.worksWrapper {}
+
+/* width */
+.worksWrapper ::-webkit-scrollbar {
+    height: 5px;
+}
+
+/* Track */
+.worksWrapper ::-webkit-scrollbar-track {
+    background: var(--White);
+}
+
+/* Handle */
+.worksWrapper ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #D9DADA;
+}
+
+/* Handle on hover */
+.worksWrapper ::-webkit-scrollbar-thumb:hover {
+    background: var(--Grey);
+}
+
+.worksWrapper ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 0;
+}
+
+.worksWrapper ul li {
+    list-style-type: none;
+    margin-right: 10px;
+    border-radius: 1em;
+    overflow: hidden;
+    flex: 0 0 auto;
+    margin-bottom: 5px;
+}
+
+.worksWrapper ul li img {
+    width: 185px;
+    height: auto;
 }
