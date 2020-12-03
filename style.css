@@ -79,6 +79,9 @@ h2 {
     margin-bottom: 1em;
     flex-wrap: wrap;
 }
+.contentWrapper .mainNav a{
+    margin-bottom: .5em;
+}
 .contentWrapper header p {
     max-width: 800px;
     width: 90%;
