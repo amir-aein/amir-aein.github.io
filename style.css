@@ -218,6 +218,29 @@ h2 {
     width: 100%;
     display: block;
 }
+.contactInfo {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.contactInfo a {
+    color: var(--Black);
+    text-decoration: none;
+}
+.contactInfo a svg {
+    margin-right: .5em;
+}
+.exLink {
+    color: inherit;
+    text-decoration: none;
+}
+.exLink:hover {
+    text-decoration: underline;
+}
+.exLink svg {
+    margin-right: .3em !important;
+}
 
 @media (max-width: 576px) {
     .mainHeader {
