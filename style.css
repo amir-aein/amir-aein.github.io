@@ -40,7 +40,7 @@ h2 {
 .mainLogo img {
     margin-right: 1em;
     width: 75px;
-    height: auto;
+    height: 67px;
 }
 
 .mainLogo>div {
@@ -209,6 +209,7 @@ h2 {
 }
 .cvItem ul li {
     text-align: justify;
+    margin-bottom: .5em;
 }
 .cvItem p {
     text-align: justify;
