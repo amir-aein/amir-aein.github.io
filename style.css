@@ -74,6 +74,11 @@ h2 {
 .contentWrapper {
     margin-bottom: 10em;
 }
+.contentWrapper .mainNav {
+    justify-content: center;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+}
 .contentWrapper header p {
     max-width: 800px;
     width: 90%;
@@ -82,7 +87,7 @@ h2 {
 }
 
 .category {
-    margin: 2em 0;
+    margin: 2em 0 5em 0;
 }
 
 .category h1 {
