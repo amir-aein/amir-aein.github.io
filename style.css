@@ -223,6 +223,7 @@ h2 {
     flex-flow: row;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
 }
 .contactInfo a {
     color: var(--Black);
@@ -252,5 +253,8 @@ h2 {
     .mainNav {
         width: 100%;
         justify-content: center;
+    }
+    .cvItem ul li, .cvItem h2 {
+        text-align: left;
     }
 }
