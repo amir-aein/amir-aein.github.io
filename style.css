@@ -6,7 +6,7 @@
 
 body {
   background: var(--White);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto Slab", serif;
   color: var(--Black);
   font-size: 13px;
   margin: 0;
@@ -25,16 +25,16 @@ h2 {
 
 .mainHeader {
   display: flex;
-  width: 90%;
   margin: 40px auto;
   max-width: 550px;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  width: max-content;
 }
 
 .mainLogo {
   display: flex;
+  margin-right: 1rem;
 }
 
 .mainLogo img {
@@ -60,6 +60,8 @@ h2 {
   border-radius: 1em;
   text-decoration: none;
   margin-left: 0.5em;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .mainNav a:hover {
@@ -67,10 +69,37 @@ h2 {
 }
 
 .mainNav a.active {
-  color: var(--Black);
+  background: var(--Black);
   border-color: var(--Black);
+  color: white;
 }
-
+.portNav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.portNav a {
+  color: var(--Grey);
+  border: 1px solid var(--White);
+  border-radius: 6em;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  height: 5rem;
+  width: 5rem;
+  text-align: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+.portNav a:hover {
+  color: var(--Black);
+}
+.portNav a.active {
+  background: var(--Black);
+  border-color: var(--Black);
+  color: white;
+}
 .contentWrapper {
   margin-bottom: 10em;
 }
@@ -78,15 +107,19 @@ h2 {
   justify-content: center;
   margin-bottom: 1em;
   flex-wrap: wrap;
+  margin-top: 5rem;
 }
 .contentWrapper .mainNav a {
   margin-bottom: 0.5em;
 }
 .contentWrapper header p {
-  max-width: 800px;
+  max-width: 900px;
   width: 90%;
   margin: 0 auto 3em auto;
   text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2.3rem;
 }
 
 .category {
@@ -95,7 +128,10 @@ h2 {
 
 .category h1 {
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  margin-top: 4rem;
+  font-size: 2rem;
+  margin-left: 2rem;
 }
 
 .worksWrapper li .itemTitle {
@@ -121,7 +157,6 @@ h2 {
 /* Track */
 .worksWrapper ::-webkit-scrollbar-track {
   background: var(--White);
-
 }
 
 /* Handle */
@@ -140,12 +175,12 @@ h2 {
   flex-direction: row;
   flex-wrap: nowrap;
   overflow-x: scroll;
-  padding: 0;
+  padding: 0 2rem;
 }
 
 .worksWrapper ul li {
   list-style-type: none;
-  margin-left: 10px;
+  margin-right: 1rem;
   overflow: hidden;
   flex: 0 0 auto;
   margin-bottom: 12px;
@@ -165,15 +200,13 @@ h2 {
   margin-right: 0.4em;
 }
 .statement .highlight {
-  background: #f288cc;
-  color: white;
+  color: #f959c0;
   padding: 0.15em 0.4em;
   border-radius: 1em;
 }
 .statement bold {
-  background: #74b8c2;
+  color: #47c0d2;
   padding: 0.15em 0.4em;
-  color: white;
   border-radius: 1em;
 }
 .statement .blackHighlight {
@@ -188,10 +221,11 @@ h2 {
   border-bottom: 3px double var(--Grey);
   width: 90%;
   max-width: 550px;
+  font-size: 1.2rem;
 }
 .cvBlock {
   width: 90%;
-  margin: 2em auto;
+  margin: 2em auto 6rem;
   max-width: 550px;
   display: flex;
   flex-direction: row;
@@ -282,5 +316,9 @@ h2 {
   .cvItem ul li,
   .cvItem h2 {
     text-align: left;
+  }
+  .contentWrapper header p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
   }
 }
