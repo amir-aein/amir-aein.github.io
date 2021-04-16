@@ -139,14 +139,11 @@ h2 {
   bottom: 1.3rem;
   right: 1rem;
   left: 1rem;
-  border: 1px solid var(--Grey);
   padding: 1rem;
-  border-radius: 3rem;
   text-align: center;
-  color: var(--Grey);
-  font-style: italic;
-  margin: 0;
-  background: rgba(255, 255, 255, 0.7);
+  color: #636363;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 /* width */
@@ -320,5 +317,10 @@ h2 {
   .contentWrapper header p {
     font-size: 1.1rem;
     line-height: 1.5rem;
+  }
+  .portNav {
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
   }
 }
