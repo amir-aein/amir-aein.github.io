@@ -302,6 +302,10 @@ h2 {
 @media (max-width: 576px) {
   .mainHeader {
     justify-content: center;
+    width: auto;
+    border-bottom: 1px solid var(--Grey);
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   .mainLogo {
     margin-bottom: 2em;
@@ -317,10 +321,12 @@ h2 {
   .contentWrapper header p {
     font-size: 1.1rem;
     line-height: 1.5rem;
+    text-align: left;
   }
   .portNav {
     flex-wrap: wrap;
-    width: 60%;
     margin: auto;
+    border-bottom: 1px solid var(--Grey);
+    margin-bottom: 1rem;
   }
 }
