@@ -77,27 +77,49 @@ h2 {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+}
+.portNav > * {
+  border: 1px solid var(--Grey);
+  border-radius: 15px;
+}
+.portNav .workTitleWrapper {
+  display: flex;
+  flex: 0 0 100%;
+  margin-top: 30px;
+  flex-flow: column;
+  border: none;
+}
+.portNav .workTitleWrapper h2 {
+  font-size: 30px;
+  color: var(--Black);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.portNav .workTitleWrapper p {
+  text-align: justify;
+  margin: 0;
+  max-width: initial;
+  width: 100%;
 }
 .portNav a {
+  text-align: center;
+  padding: 15px;
+  flex: 1 0 auto;
+  margin-right: 10px;
   color: var(--Grey);
-  border: 1px solid var(--White);
-  border-radius: 6em;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
-  display: flex;
-  height: 5rem;
-  width: 5rem;
-  text-align: center;
-  align-items: center;
-  margin-right: 1rem;
+}
+.portNav a:nth-child(3) {
+  margin-right: 0;
 }
 .portNav a:hover {
-  color: var(--Black);
-}
-.portNav a.active {
   background: var(--Black);
-  border-color: var(--Black);
   color: white;
 }
 .contentWrapper {
@@ -303,9 +325,8 @@ h2 {
   .mainHeader {
     justify-content: center;
     width: auto;
-    border-bottom: 1px solid var(--Grey);
-    padding-bottom: 2rem;
-    margin-bottom: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   .mainLogo {
     margin-bottom: 2em;
@@ -322,11 +343,5 @@ h2 {
     font-size: 1.1rem;
     line-height: 1.5rem;
     text-align: left;
-  }
-  .portNav {
-    flex-wrap: wrap;
-    margin: auto;
-    border-bottom: 1px solid var(--Grey);
-    margin-bottom: 1rem;
   }
 }
