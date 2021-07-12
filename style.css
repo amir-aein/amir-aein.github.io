@@ -317,7 +317,20 @@ h2 {
 .exLink svg {
   margin-right: 0.3em !important;
 }
+a.externalLink {
 
+    padding: 0;
+    text-align: initial;
+    flex: none;
+    margin: 0;
+    font-size: inherit;
+    color: #47c0d2;
+    text-decoration: underline;
+}
+a.externalLink:hover {
+  background: none;
+  color: #f959c0;
+}
 @media (max-width: 576px) {
   .mainHeader {
     justify-content: center;
@@ -346,3 +359,4 @@ h2 {
     text-align: left;
   }
 }
+
