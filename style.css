@@ -80,44 +80,48 @@ h2 {
   max-width: 1000px;
   margin: auto;
   padding: 30px;
-  justify-content: space-between;;
-}
-.portNav > * {
-  border: 1px solid var(--Grey);
-  border-radius: 15px;
-}
-.portNav .workTitleWrapper {
-  display: flex;
-  flex: 0 0 100%;
-  flex-flow: column;
-  border: none;
-}
-.portNav .workTitleWrapper h2 {
-  font-size: 30px;
-  color: var(--Black);
-  font-weight: 800;
-  margin-bottom: 10px;
-}
-.portNav .workTitleWrapper p {
-  text-align: justify;
-  margin: 0;
-  max-width: initial;
-  width: 100%;
+  justify-content: space-between;
 }
 .portNav a {
   text-align: center;
-  padding: 15px;
-  flex: 1 0 auto;
+  flex: 1 1 350px;
   color: var(--Grey);
   text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 15px;
-  margin-right: 15px;
+  background: white;
+  overflow: hidden;
+  border-radius: 1em;
+  box-shadow: #d7d7d7 0px 3px 0;
+  padding: 1em;
+  margin: 0 0.5em 1em 0.5em;
 }
 .portNav a:hover {
-  background: var(--Black);
-  color: white;
+  box-shadow: var(--Grey) 0px 5px 0;
+  transform: translateY(-2px);
+}
+.portNav a .PNItem {
+  display: flex;
+  text-align: left;
+}
+.portNav a .PNItem div h2 {
+  font-size: 1.2em;
+  color: var(--Black);
+  font-weight: 500;
+  margin-bottom: .5em;
+}
+.portNav a .PNItem div p {
+  margin: 0 !important;
+  font-size: 0.9em;
+  line-height: initial;
+  color: var(--Black);
+  width: 100%;
+}
+.portNav a .PNItem .imgWrapper {
+  flex: 0 0 100px;
+}
+.portNav a .PNItem .imgWrapper img {
+  width: 100%;
 }
 .contentWrapper {
   margin-bottom: 10em;
@@ -132,12 +136,11 @@ h2 {
   margin-bottom: 0.5em;
 }
 .contentWrapper header p {
-  max-width: 900px;
+  max-width: 1000px;
   width: 90%;
   margin: 0 auto 3em auto;
-  text-align: center;
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 2.3rem;
 }
 
@@ -212,40 +215,41 @@ h2 {
 .statement {
   line-height: 1.7em;
 }
-.statement svg {
-  margin-right: 0.4em;
+.statement > * {
+  font-weight: 500;
 }
 .statement .highlight {
   color: #f959c0;
-  padding: 0.15em 0.4em;
   border-radius: 1em;
 }
 .statement bold {
-  color: #47c0d2;
-  padding: 0.15em 0.4em;
-  border-radius: 1em;
+  color: #6870d1;
 }
 .statement .blackHighlight {
   background: var(--Black);
-  padding: 0.15em 0.4em;
   color: white;
   font-weight: 600;
 }
 .cvBlockTitle {
   padding-bottom: 1em;
-  margin: 2em auto;
-  border-bottom: 3px double var(--Grey);
-  width: 90%;
-  max-width: 550px;
+  margin-right: 2em;
   font-size: 1.2rem;
+  position: sticky;
+  top: 1em;
+  height: fit-content;
+  flex: 0 0 100px;
 }
 .cvBlock {
   width: 90%;
-  margin: 2em auto 6rem;
-  max-width: 550px;
+  margin: 0 auto 1em auto;
+  max-width: 700px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  background: white;
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: #d7d7d7 0px 3px 0;
 }
 .cvBlock aside {
   flex: 0 0 25px;
@@ -270,13 +274,19 @@ h2 {
   padding-bottom: 2em;
   border-bottom: 1px dotted var(--Grey);
 }
+.cvItem:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
 .cvItem h2 {
   text-align: justify;
+  font-size: 1.2em;
 }
 .cvItem h2 svg {
-  color: #52c2b8;
-  margin-right: 0.1em;
-  vertical-align: text-top;
+  color: #f959c0;
+  font-size: 0.9em;
+  vertical-align: revert;
 }
 .cvItem bold {
   font-weight: 600;
@@ -318,14 +328,13 @@ h2 {
   margin-right: 0.3em !important;
 }
 a.externalLink {
-
-    padding: 0;
-    text-align: initial;
-    flex: none;
-    margin: 0;
-    font-size: inherit;
-    color: #47c0d2;
-    text-decoration: underline;
+  padding: 0;
+  text-align: initial;
+  flex: none;
+  margin: 0;
+  font-size: inherit;
+  color: #47c0d2;
+  text-decoration: underline;
 }
 a.externalLink:hover {
   background: none;
@@ -359,4 +368,3 @@ a.externalLink:hover {
     text-align: left;
   }
 }
-
