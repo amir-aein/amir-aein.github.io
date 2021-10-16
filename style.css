@@ -340,6 +340,23 @@ a.externalLink:hover {
   background: none;
   color: #f959c0;
 }
+.portHeader {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+}
+.portHeader > div {
+  
+}
+.portHeader .imgWrapper {
+  
+}
+.portHeader .imgWrapper img {
+  width: 100%;
+  height: auto;
+}
+
+
 @media (max-width: 576px) {
   .mainHeader {
     justify-content: center;
